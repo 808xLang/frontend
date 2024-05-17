@@ -24,6 +24,10 @@ function NAV({ logout }) {
                             Jobs</NavLink>
                     </li>
                     <li>
+                        <NavLink exact to='/profile'>
+                            Profile</NavLink>
+                    </li>
+                    <li>
                         <Link to='/' onClick={logout}>
                             Log out {currentUser.first_name || currentUser.username}
                         </Link>
